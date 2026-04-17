@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body{
+  font-family: "Tajawal", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+}
+
+.btn-down{
+    font-family: "Tajawal", sans-serif;
+    margin-top: 120px;
+    font-size: 25px;
+    border-radius: 20px;
+    height: 60px;
+    background-color: rgb(216, 219, 28);
+    border: rgb(246, 255, 0);
+}
+
+.btn-down:hover{
+    cursor: pointer;
+    margin-top: 119px;
+}
+
+.another-os{
+    margin-top: 70px;
+}
+
+.soon-1{
+    color: rgb(247, 251, 13);
+}
+
+.l1{
+    background-color: rgb(255, 255, 255);
+}
+
+.AgeRating{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+}
+
+.com-rate{
+    margin-top: 120px;
+}
+
+.inf{
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}
+
+.AgeRating1{
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.Sahem-logo{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.PS-L{
+    margin-top: 20px;
+}
+
+.game-imgs{
+    margin-top: 190px;
+}
+
+.game-imgs img{
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 420px;
+    height: 190px;
+}
