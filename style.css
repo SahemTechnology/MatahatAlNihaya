@@ -94,3 +94,82 @@ a{
 .githubacc{
     color: white;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 70px; /* مهم جداً */
+  font-family: "Tajawal", sans-serif;
+}
+
+/* الشريط */
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 18px;
+
+  background: linear-gradient(135deg, #00ff4c, #00ff1e);
+  color: #1f1f1f;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  z-index: 9999;
+
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+
+  animation: slideDown 0.35s ease;
+}
+
+/* النص */
+.top-banner__content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* زر الإغلاق */
+.top-banner__close {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background: rgba(0,0,0,0.1);
+  color: #111;
+
+  font-size: 16px;
+
+  transition: 0.2s;
+}
+
+.top-banner__close:hover {
+  background: rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+/* حركة دخول ناعمة */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
