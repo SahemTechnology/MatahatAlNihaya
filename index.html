@@ -9,14 +9,10 @@
     <title>لعبة متاهة النهاية</title>
 </head>
 <body>
-    <div id="topMessage" class="top-banner">
-  <div class="top-banner__content">
-    <span dir="rtl">تحديث جديد!</span>
-  </div>
-
-  <button class="top-banner__close" onclick="closeMessage()">✕</button>
-    </div>
-
+    <div class="top-note" id="topNote">
+  <span class="note-text">تحديث جديد! <a href="update.html">تعرف على المزيد</a></span>
+  <button class="close-btn" onclick="closeNote()">×</button>
+</div>
     <div class="page-content">
             <center>
         <h1 class="gamename">متاهة النهاية</h1>
@@ -26,7 +22,7 @@
             <center>
         <p>متاهة النهاية هي لعبة رعب من منظور شخص اول حيث انك تكون في 5 متاهات كل متاهة اصعب من</p>
         <p>.الأخرى, في المتاهة الاولى لا تجد وحوشا ولا اشباحا ولكن ابتدائا من المتاهة الثانية يبدأ الرعب</p>
-        <a href="https://www.mediafire.com/file/glpf9wiz5o3zq43/MatahatAlNiahaya_ReadyToPlay.rar/file"><Button class="btn-down" dir="rtl">تحميل لـ Windows <img </Button></a>
+        <a href="https://www.mediafire.com/file/wryxzn8lle6dvpi/MatahatAlNiahaya_ReadyToPlay.rar/file"><Button class="btn-down" dir="rtl">تحميل لـ Windows <img </Button></a>
     </center>
     <div class="game-imgs">
         <center><h3>صور اللعبة</h3></center>
@@ -76,17 +72,15 @@
     </div>
         </div>
         <script>
-function closeMessage() {
-  const el = document.getElementById("topMessage");
-
-  el.style.transform = "translateY(-100%)";
-  el.style.opacity = "0";
-  el.style.transition = "0.3s ease";
+            function closeNote() {
+  const note = document.getElementById("topNote");
+  note.style.opacity = "0";
+  note.style.transform = "translateY(-100%)";
 
   setTimeout(() => {
-    el.style.display = "none";
+    note.style.display = "none";
   }, 300);
 }
-</script>
+        </script>
 </body>
 </html>
