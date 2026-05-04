@@ -173,3 +173,45 @@ body {
     opacity: 1;
   }
 }
+
+.top-note {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.note-text {
+  text-align: center;
+  flex: 1;
+  font-size: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  background: rgba(255,255,255,0.35);
+  transform: scale(1.1);
+}
