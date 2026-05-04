@@ -9,15 +9,24 @@
     <title>لعبة متاهة النهاية</title>
 </head>
 <body>
-    <center>
+    <div id="topMessage" class="top-banner">
+  <div class="top-banner__content">
+    <span dir="rtl">تحديث جديد!</span>
+  </div>
+
+  <button class="top-banner__close" onclick="closeMessage()">✕</button>
+    </div>
+
+    <div class="page-content">
+            <center>
         <h1 class="gamename">متاهة النهاية</h1>
         <img class="logo-img" src="logos/Matahat_Al_Nihaya.png" alt="Game Logo">
     </center>
     <div class="divheader">
             <center>
-        <p>متاهة النهاية هي لعبة رعب من منظور شخص اول حيث انك تكون في 10 متاهات كل متاهة اصعب من</p>
+        <p>متاهة النهاية هي لعبة رعب من منظور شخص اول حيث انك تكون في 5 متاهات كل متاهة اصعب من</p>
         <p>.الأخرى, في المتاهة الاولى لا تجد وحوشا ولا اشباحا ولكن ابتدائا من المتاهة الثانية يبدأ الرعب</p>
-        <a href="https://download1590.mediafire.com/du712s4nzbygZIaqocJsf-3x1a8dJiOR_SNOofgr-7gTiqM9O4HNWxeNn4DnvBGCKHRD2bJd2uliANES2alO-y_qvtjdOQK_6P0Qavc4i75ID5yDMr0j_iFRTMuql0N_n5TPs3Q9Lu9HlIz66Cqn0AXinUjJkPV0nz73r4RCKBQbnQ/k9e75n0s7j63ixd/MatahatAlNiahaya_ReadyToPlay.rar"><Button class="btn-down" dir="rtl">تحميل لـ Windows (374.31 MB)<img </Button></a>
+        <a href="https://www.mediafire.com/file/glpf9wiz5o3zq43/MatahatAlNiahaya_ReadyToPlay.rar/file"><Button class="btn-down" dir="rtl">تحميل لـ Windows <img </Button></a>
     </center>
     <div class="game-imgs">
         <center><h3>صور اللعبة</h3></center>
@@ -65,5 +74,19 @@
         </center>
     </div>
     </div>
+        </div>
+        <script>
+function closeMessage() {
+  const el = document.getElementById("topMessage");
+
+  el.style.transform = "translateY(-100%)";
+  el.style.opacity = "0";
+  el.style.transition = "0.3s ease";
+
+  setTimeout(() => {
+    el.style.display = "none";
+  }, 300);
+}
+</script>
 </body>
 </html>
